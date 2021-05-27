@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id="e1" class="dep_woutList.Address">
+   <constructor-arg value="Rajasthan"></constructor-arg>
+   <constructor-arg value="SrigangaNagar"></constructor-arg>
+   </bean>
+   <bean id="e" class="dep_woutList.question">
+   <constructor-arg value="1" type="int"></constructor-arg>
+   <constructor-arg value="Mohit"></constructor-arg>
+    <constructor-arg>
+    <ref bean="e1"/>
+    </constructor-arg>
+   </bean>
+
+   </beans>

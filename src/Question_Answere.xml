@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id="a" class="Collection_Beans_Constructor.Question">
+   <constructor-arg value="111"></constructor-arg>
+   <constructor-arg value="What is java"></constructor-arg>
+   <constructor-arg>
+   <list>
+   <value>Java is platform Independent</value>
+   <value>Java is robust</value>
+   <value>Java is efficient</value>  
+   </list>
+   </constructor-arg>
+   </bean>
+   
+   
+</beans>

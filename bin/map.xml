@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id="a" class="MapInjection.Question">
+   <constructor-arg value="1" type="int"></constructor-arg>
+   <constructor-arg value="What is Java?"></constructor-arg>
+   <constructor-arg>
+   <map>  
+   <entry key-ref="b" value-ref="d"></entry>  
+   <entry key-ref="c" value-ref="e"></entry>  
+   </map>
+   </constructor-arg>
+   </bean>
+   <bean id="b" class="MapInjection.Answere">
+   <constructor-arg value="1" type="int"></constructor-arg>
+   <constructor-arg value="Java is Robust"></constructor-arg>
+   </bean>
+   <bean id="c" class="MapInjection.Answere">
+   <constructor-arg value="2"></constructor-arg>
+   <constructor-arg value="Java is Platform Independent"></constructor-arg>
+   </bean>
+   <bean id="d" class="MapInjection.User">
+   <constructor-arg value="1"></constructor-arg>
+   <constructor-arg value="Mohit"></constructor-arg>
+   </bean>
+   <bean id="e" class="MapInjection.User">
+   <constructor-arg value="2"></constructor-arg>
+   <constructor-arg value="Upender"></constructor-arg>
+   </bean>
+   
+</beans>   

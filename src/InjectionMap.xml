@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id ="a1" class="Injection_Map.Question">
+   <constructor-arg value="1"></constructor-arg>
+   <constructor-arg value="What is Java?"></constructor-arg>
+   <constructor-arg>
+   <map>
+   <entry key="1" value="Platform Independent"></entry>
+      <entry key="2" value="Robust"></entry>
+         <entry key="3" value="Efficient"></entry>
+            <entry key="4" value="Exception Handling"></entry>
+               <entry key="5" value="Best Language"></entry>
+               
+   </map>
+  </constructor-arg>
+   </bean>  
+</beans>
